@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family:  'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #EEE;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 10px 13%;
+    width: 29%;
+    height: 100%;
+    position: fixed;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    padding: 8px 25px 8px 8px;
+    font-size: 2rem;
+    width: fit-content;
+}
+
+.nav-links a i {
+    font-size: 3rem;
+    margin-right: 15px;
+}
+
+.nav-links a:hover, .main-account a:hover {
+        background-color: rgb(47, 51, 45);
+        border-radius: 9999px;
+}
+
+.nav-links a:first-child {
+    padding: 8px 8px;
+}
+
+.nav-links a:first-child i {
+    margin: 0;
+}
+
+.nav-links .x-button {
+    background-color: rgb(29, 155, 240);
+    width: 90%;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 9999px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+    transition-duration: 0.2s;
+}
+
+.nav-links .x-button:hover {
+    background-color: rgba(29, 155, 240, 0.9);
+}
+
+.main-account {
+    width: 100%;
+    height: 30%;
+    padding-top: 185px;
+}
+
+.main-account a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px 8px 15px;
+    margin-right: 10px;
+}
+
+.x-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.account-details {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.account-name {
+    font-weight: 500;
+}
+
+.account-handle {
+    color: rgb(110, 118, 125);
+}
+
+
+main {
+    width: 71%;
+    height: 100%;
+    margin-left: 29%;
+}
+
+.main-flex {
+    display: flex;
+    width: 100%;
+}
+
+.main-feed {
+    width: 50%;
+    border-left:1px solid rgb(47, 51, 45);
+    border-right:1px solid rgb(47, 51, 45);
+}
+
+.home-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+}
+
+.new-x {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 4px 16px;
+}
+
+.new-x .x-img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.new-x-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.new-x-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.new-x-actions ul {
+    display: flex;
+    list-style: none;
+}
+
+.new-x-details input {
+    width: 100%;
+    height: 24px;
+    background-color: #000;
+    border: none;
+    color: #eee;
+    outline: none;
+    font-size: 2rem;
+}
+
+.new-x-actions ul li {
+    margin-left: 12px;
+    color: #1c88d2;
+    cursor: pointer;
+}
+
+.new-x-actions .x-button {
+    background-color: rgb(29, 155, 240);
+    width: 75px;
+    height: 35px;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 9999px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 15px;
+    transition-duration: 0.2s;
+}
+
+.feed-x {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    padding: 12px 16px 0 16px;
+    border-top: 1px solid rgb(47, 51, 54);
+    cursor: pointer;
+}
+
+.feed-x-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.feed-x i {
+    color: rgb(110, 118, 125);
+    font-size: 2rem;
+}
+
+.tweeter-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.tweeter-details a {
+    font-weight: 700;
+}
+
+.tweeter-details span {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(110, 118, 125);
+    margin-left: 3px;
+}
+
+.tweeter-text {
+    font-size: 1.5rem;
+    color: #EEE;
+    width: 100%;
+}
+
+.tweeter-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0;
+    padding-right: 50px;
+}
+
+.tweeter-icons i:hover {
+    color: blue;
+}
+
+
+.slid-feed {
+    width: 50%;
+    padding: 0 2%;
+}
+
+
+.search {
+    display: flex;
+    max-width: 355px;
+    height: 55px;
+    padding-top: 5px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
+
+
+
+.search input{
+    width: 100%;
+    height: 45px;
+    background-color: #212327;
+    border-radius: 9999px;
+    color: #EEE;
+    border: none;
+    padding-left: 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 20px;
+    outline: none;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    max-width: 355px;
+    margin-top: 15px;
+    border-radius: 16px;
+    background-color: #212327;
+}
+
+.h1-title {
+    color: #EEE;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 15px 15px;
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    margin-top: 5px;
+    padding: 0 15px;
+    color: rgb(110, 118, 125);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.item-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trending span {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+.trending p {
+    color: #EEE;
+}  
+
+.trending-item:hover, .show-more:hover, .follow-profile:hover {
+    cursor: pointer;
+    background-color: #1c1e22;
+}
+
+
+.show-more {
+    display: flex;
+    align-items: center;
+    color: #1c88d2;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 100%;
+    padding: 15px 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    max-width: 355px;
+    border-radius: 16px;
+    background-color: #212327;
+    margin-top: 16px;
+}
+
+
+.follow-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    padding: 30px 15px;
+}
+
+.follow-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.follow-details a {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.follow-details a:hover {
+    text-decoration: underline;
+}
+
+
+.follow-details span {
+    color: rgb(110, 118, 125);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#follows {
+    font-family: 300;
+    font-size: 1.35rem;
+    background-color: #1c1e22;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+
+.follow .x-button {
+    background-color: #eee;
+    width: 75px;
+    height: 35px;
+    margin: 0 0 0 12px;
+    border-radius: 9999px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition-duration: 0.2s;
+}
+
+
+@media screen and (max-width: 1260px) {
+    header {
+        width: 10%;
+        padding: 10px 0; 
+    }
+
+    main {
+        margin-left: 10%;
+    }
+
+    header span {
+        display: none;
+    }
+
+    header .x-button {
+        width: 55px;
+        border-radius: 50%;
+        font-size: 1.4rem;
+    }
+
+    header .main-account {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .main-account i {
+        display: none;  
+    }
+
+    header .account-details {
+        display: none;  
+    }
+
+    .nav-links {
+        align-items: center;  
+    }
+
+    .nav-links a i {
+        margin-right: 0;  
+    }
+
+    .nav-links a, .main-account a {
+        padding: 10px 10px;
+    }
+}
